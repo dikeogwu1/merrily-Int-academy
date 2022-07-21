@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Holiday Lesson | Merrily Int Academy</title>
+  </head>
+  <body>
+    <main id="reg">
+      <!-- title -->
+      <div>
+        <h2 class="form-title">Children holiday lesson form</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="form-container">
+        <form
+          id="registration-form"
+          name="Holiday Lesson Registration Form"
+          method="post"
+          data-netlify="true"
+        >
+          <input
+            type="text"
+            id="full-name"
+            name="Full name"
+            placeholder="Full Name"
+            required
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="email-address"
+            name="Residential Address"
+            placeholder="Residential Address"
+            required
+            autocomplete="off"
+          />
+          <input
+            type="tel"
+            id="phone-number"
+            required
+            autocomplete="off"
+            placeholder="Mobile Number"
+            name="Phone number"
+          />
+          <input
+            type="number"
+            id="phone-number"
+            required
+            autocomplete="off"
+            placeholder="Child's Age"
+            name="Child's Age"
+          />
+          <h4 for="gender" class="input-des">Gender</h4>
+          <div class="radio-wrapper">
+            <label for="male" class="radio-label"> Male </label>
+            <input
+              type="radio"
+              id="male"
+              name="Gender"
+              value="male"
+              required
+              autocomplete="off"
+            />
+            <label for="female" class="radio-label"> Female </label>
+            <input
+              type="radio"
+              id="female"
+              name="Gender"
+              value="female"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="input-wrapper">
+            <h4 class="input-des">Educational Category</h4>
+            <select name="Educational Category" id="service">
+              <option value="Secondary School">Secondary School</option>
+              <option value="Primary School">Primary School</option>
+              <option value="Nursery School">Nursery School</option>
+            </select>
+          </div>
+          <div class="input-wrapper">
+            <h4 class="input-des">Preferred Lesson</h4>
+            <select name="Preferred Lesson" id="service">
+              <option value="Coding Class">Coding Class</option>
+              <option value="Mathematics Class">Mathematics Class</option>
+              <option value="Musical Class">Musical Class</option>
+            </select>
+          </div>
+          <div class="terms">
+            <label for="agree" class="input-des"
+              >agree to our registration fee of &#8358;1000</label
+            >
+            <input
+              type="radio"
+              id="agree"
+              name="Agree with registration fee"
+              value="Yes"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="submit-box">
+            <div class="captcha">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+            <button type="submit" class="btn submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
